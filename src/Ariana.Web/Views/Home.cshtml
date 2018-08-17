@@ -2,6 +2,9 @@
 
 @inherits UmbracoViewPage<Ariana.Logic.Models.Home>
 
-
-
 <h1> Home Page</h1>
+
+@foreach (var nestedModule in Model.Modules)
+{
+    Html.RenderPartial("~/Views/Partials/Modules/_" + nestedModule.DocumentTypeAlias + ".cshtml", nestedModule);
+}

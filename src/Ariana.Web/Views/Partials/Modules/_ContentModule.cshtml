@@ -1,0 +1,12 @@
+@using Arina.Logic.Models
+@using Our.Umbraco.Ditto
+
+@model IPublishedContent
+
+@{
+    ContentModule contentModule = Model.As<ContentModule>();
+}
+
+<h2>@contentModule.Title</h2>
+
+@contentModule.Content
