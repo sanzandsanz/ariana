@@ -1,0 +1,32 @@
+﻿@using Ariana.Logic.Models
+
+@inherits UmbracoViewPage<Ariana.Logic.Models.Site>
+
+@{
+    Layout = null;
+
+    //Site site = ContentHelper.Instance.GetSite<Site>();
+}
+
+@*<!DOCTYPE html>
+<html lang="@Model.CurrentCulture.TwoLetterISOLanguageName" prefix="og: http://ogp.me/ns#">
+<head>
+    @Html.Partial("~/Views/Partials/Shared/_MetaData.cshtml", Model)
+    @Html.RenderCacheBusterCss("/static/css/main.min.css")
+    @site.Settings.HtmlInjectors.Head
+</head>
+<body>
+    @site.Settings.HtmlInjectors.BodyStart
+    @Html.Partial("~/Views/Partials/Shared/_PrimaryNavigation.cshtml", site.Settings.NavigationSettings)
+
+    <article>
+        @RenderBody()
+    </article>
+
+    @Html.Partial("~/Views/Partials/Shared/_FooterNavigation.cshtml", site.Settings.NavigationSettings)
+
+    @Html.RenderCacheBusterJavaScript("/static/js/main.min.js")
+    @site.Settings.HtmlInjectors.BodyEnd
+    @Html.PageScripts()
+</body>
+</html>*@
