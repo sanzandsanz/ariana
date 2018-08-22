@@ -233,9 +233,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Helpers\ContentHelper.cs" />
+    <Compile Include="Common\Helpers\ImageExtension.cs" />
     <Compile Include="Common\Helpers\NestedContentExtensions.cs" />
-    <Compile Include="Models\Component.cs" />
-    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\DocumentTypes\Component.cs" />
+    <Compile Include="Models\DocumentTypes\Page.cs" />
+    <Compile Include="Models\MediaTypes\Image.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

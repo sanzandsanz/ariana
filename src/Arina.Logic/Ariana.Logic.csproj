@@ -215,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\DocumentTypes\Modules\ImageModule.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ContentModule.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Site.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
