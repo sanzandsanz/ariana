@@ -1,4 +1,7 @@
 ﻿using System.Collections.Concurrent;
+using System.Web;
+using Umbraco.Core.Models;
+using Umbraco.Core.Services;
 
 namespace Ariana.Umbraco.Helpers
 {
@@ -69,6 +72,23 @@ namespace Ariana.Umbraco.Helpers
             return type;
         }
 
+
+
+        public int GetHomeId()
+        {
+            string hostName = HttpContext.Current.Request.Url.DnsSafeHost;
+            int homeId = 0;
+            if (homeId == 0)
+            {
+                IDomainService ds = ApplicationContext.Current.Services.DomainService;
+                IList<IDomain> domains = ds.GetAll(true) as IList<IDomain> ?? ds.GetAll(true).ToList();
+                IDomain domain = domains.FirstOrDefault(d => d.DomainName.InvariantStartsWith(hostName));
+
+                homeId = (int)domain.RootContentId;
+            }
+
+            return homeId;
+        }
 
     }
 }
