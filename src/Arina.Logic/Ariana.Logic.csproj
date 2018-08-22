@@ -215,10 +215,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ImageModule.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ContentModule.cs" />
-    <Compile Include="Models\DocumentTypes\Pages\Site.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Site.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
+    <Compile Include="Models\DocumentTypes\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

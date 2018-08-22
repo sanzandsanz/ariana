@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
+@{
+    Site site = ContentHelper.Instance.GetSite<Site>();
+
+    var head = site.Settings.HtmlInjectors.Head;
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
