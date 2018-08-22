@@ -10,6 +10,6 @@ namespace Arina.Logic.Models
     {
         public virtual string Title { get; set; }
 
-        public Image Image { get; set; }
+        public virtual Image Image { get; set; }
     }
 }
