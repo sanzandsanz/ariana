@@ -2,7 +2,6 @@
 @using Ariana.Umbraco.Helpers
 @{
     Site site = ContentHelper.Instance.GetSite<Site>();
-
     var head = site.Settings.HtmlInjectors.Head;
 }
 <!DOCTYPE html>
@@ -14,6 +13,7 @@
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    @Html.Raw(head)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

@@ -22,7 +22,6 @@ namespace Ariana.Umbraco.Helpers
 
     public class ContentHelper
     {
-
         /// <summary>
         /// A new instance Initializes a new instance of the <see cref="ContentHelper"/> class.
         /// with lazy initialization.
@@ -46,6 +45,7 @@ namespace Ariana.Umbraco.Helpers
         private ContentHelper()
         {
             List<Type> registerTypes = PluginManager.Current.ResolveTypes<Page>().ToList();
+            registerTypes.AddRange(PluginManager.Current.ResolveTypes<Component>());
             registerTypes.AddRange(PluginManager.Current.ResolveTypes<NestedComponent>());
 
             foreach (Type type in registerTypes)
