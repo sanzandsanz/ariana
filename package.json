@@ -1,0 +1,30 @@
+{
+  "name": "DeepNET.Umbraco.CMS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bgtm": "^1.1.0",
+    "bgtm-engine-images": "^0.0.5",
+    "bgtm-engine-js": "^0.0.3",
+    "bgtm-engine-scss": "^0.0.5",
+    "bgtm-engine-svgsprite": "^0.0.5",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bgtm": "^1.1.0",
+    "bgtm-engine-images": "0.0.5",
+    "bgtm-engine-js": "0.0.3",
+    "bgtm-engine-scss": "0.0.5",
+    "bgtm-engine-svgsprite": "0.0.5",
+    "bootstrap": "^4.1.2",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

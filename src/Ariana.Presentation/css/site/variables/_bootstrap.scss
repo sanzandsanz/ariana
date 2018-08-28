@@ -1,0 +1,13 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+$media-xs: (screen and min-width: #{map-get($grid-breakpoints, 'xs')});
+$media-sm: (screen and min-width: #{map-get($grid-breakpoints, 'sm')});
+$media-md: (screen and min-width: #{map-get($grid-breakpoints, 'md')});
+$media-lg: (screen and min-width: #{map-get($grid-breakpoints, 'lg')});
+$media-xl: (screen and min-width: #{map-get($grid-breakpoints, 'xl')});
