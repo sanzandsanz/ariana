@@ -390,6 +390,8 @@
     <Content Include="uSync\data\MediaType\folder\def.config" />
     <Content Include="uSync\data\MediaType\image\def.config" />
     <Content Include="uSync\data\Template\home\Home.config" />
+    <Content Include="Views\Error404.cshtml" />
+    <Content Include="Views\GenericPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

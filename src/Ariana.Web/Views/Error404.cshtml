@@ -1,4 +1,8 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@{
-	Layout = null;
-}
+﻿@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
+
+@inherits UmbracoViewPage<Ariana.Logic.Models.Error404>
+
+<h1> Error Page</h1>
+
+@Html.NestedContent(Model.Modules, null, "~/Views/Partials/Modules/")

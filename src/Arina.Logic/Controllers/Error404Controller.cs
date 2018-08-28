@@ -7,12 +7,12 @@ using Umbraco.Web.Models;
 
 namespace Arina.Controllers
 {
-    public class HomeController : Umbraco.Web.Mvc.RenderMvcController
+    public class Error404Controller : Umbraco.Web.Mvc.RenderMvcController
     {
         public override ActionResult Index(RenderModel model)
         {
-            Home page = model.As<Home>();
-            return this.View("Home", page);
+            Error404 page = model.As<Error404>();
+            return this.View("Error404", page);
         }
     }
 }
