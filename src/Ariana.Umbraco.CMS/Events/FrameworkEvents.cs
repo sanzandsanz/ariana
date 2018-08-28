@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Routing;
 using Ariana.Umbraco.CMS.Handlers;
 using Umbraco.Core;
 using Umbraco.Web.Routing;
@@ -19,7 +20,7 @@ namespace Ariana.Umbraco.CMS.Events
 
         public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
-           
+            RouteBuilder.RegisterRoutes(RouteTable.Routes);
         }
 
         public void OnApplicationStarting(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)

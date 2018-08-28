@@ -218,6 +218,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
+    <Compile Include="Models\DocumentTypes\Compositions\IModules.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ImageModule.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ContentModule.cs" />
     <Compile Include="Models\DocumentTypes\Components\Site.cs" />

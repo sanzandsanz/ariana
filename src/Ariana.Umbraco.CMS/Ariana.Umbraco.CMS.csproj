@@ -236,8 +236,11 @@
     <Compile Include="Common\Helpers\ContentHelper.cs" />
     <Compile Include="Common\Helpers\ImageExtension.cs" />
     <Compile Include="Common\Helpers\NestedContentExtensions.cs" />
+    <Compile Include="Controllers\RobotsTxtController.cs" />
     <Compile Include="Events\FrameworkEvents.cs" />
+    <Compile Include="Events\RouteBuilder.cs" />
     <Compile Include="Handlers\Error404Handler.cs" />
+    <Compile Include="Models\DocumentTypes\RobotsTxt.cs" />
     <Compile Include="Models\DocumentTypes\Component.cs" />
     <Compile Include="Models\DocumentTypes\NestedComponent.cs" />
     <Compile Include="Models\DocumentTypes\Page.cs" />
@@ -253,6 +256,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

@@ -8,7 +8,7 @@ using Umbraco.Core.Models;
 
 namespace Ariana.Logic.Models
 {
-    public class Error404 : Page
+    public class Error404 : Page, IModules
     {
         public IEnumerable<IPublishedContent> Modules { get; set; }
     }

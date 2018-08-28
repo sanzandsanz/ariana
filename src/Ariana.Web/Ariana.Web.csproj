@@ -392,6 +392,7 @@
     <Content Include="uSync\data\Template\home\Home.config" />
     <Content Include="Views\Error404.cshtml" />
     <Content Include="Views\GenericPage.cshtml" />
+    <Content Include="Views\Shared\RobotsTxt.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
