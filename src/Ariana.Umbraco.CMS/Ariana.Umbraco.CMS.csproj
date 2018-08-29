@@ -233,6 +233,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Helpers\Assets\CacheBuster.cs" />
     <Compile Include="Common\Helpers\ContentHelper.cs" />
     <Compile Include="Common\Helpers\ImageExtension.cs" />
     <Compile Include="Common\Helpers\NestedContentExtensions.cs" />

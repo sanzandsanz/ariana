@@ -1,5 +1,5 @@
 {
-  "name": "DeepNET.Umbraco.CMS",
+  "name": "ariana",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -25,6 +25,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Sanjay",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanzandsanz/ariana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanzandsanz/ariana/issues"
+  },
+  "homepage": "https://github.com/sanzandsanz/ariana#readme"
 }

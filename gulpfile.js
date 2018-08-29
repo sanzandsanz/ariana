@@ -5,8 +5,8 @@ var js = require('bgtm-engine-js');
 var images = require('bgtm-engine-images');
 
 var config = {
-    src: 'src/Deepend.Presentation/',
-    dest: 'src/Deepend.Web/static/'
+    src: 'src/Ariana.Presentation/',
+    dest: 'src/Ariana.Web/static/'
 };
 
 tm.add('scss', {
