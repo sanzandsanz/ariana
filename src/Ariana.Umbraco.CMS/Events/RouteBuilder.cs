@@ -20,6 +20,13 @@ namespace Ariana.Umbraco.CMS.Events
                 "robots-txt",
                 new { controller = "RobotsTxt", action = "Index" }
             );
+
+
+            // Sitemap
+            routes.MapRoute("SiteMap", "sitemap.xml", new
+            {
+                controller = "SiteMap", action = "Index"
+            });
         }
     }
 }

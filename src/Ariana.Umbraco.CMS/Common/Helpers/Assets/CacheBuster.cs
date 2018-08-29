@@ -116,7 +116,7 @@
         public static string FingerPrint(string rootRelativePath)
         {
 
-            //return rootRelativePath;
+            return rootRelativePath;
 
             //Todo:
             if (HttpRuntime.Cache[rootRelativePath] == null)

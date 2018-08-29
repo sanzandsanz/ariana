@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ariana.Umbraco.CMS", "src\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4BEA3D02-FD87-4BA2-9A2F-544918D49301}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ariana.Presentation", "src\Ariana.Presentation\", "{5D318E56-8140-40FD-84F8-8D685E61C46A}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ariana.Presentation(1)", "src\Ariana.Presentation\", "{5D318E56-8140-40FD-84F8-8D685E61C46A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_52675"

@@ -1,21 +1,23 @@
-﻿using Ariana.Umbraco.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Our.Umbraco.Ditto;
-
-namespace Ariana.Umbraco.CMS.Models
+﻿namespace Ariana.Umbraco.CMS.Models
 {
+    using Ariana.Umbraco.Helpers;
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using Our.Umbraco.Ditto;
+    using Ariana.Umbraco.Models;
+    using System.Web;
+
     [DittoLazy]
     [UmbracoPicker]
-    public class Page
+    public class Page : IXmlSitemap
     {
         /// <inheritdoc/>
         public virtual int Id { get; set; }
 
         /// <inheritdoc/>
         public virtual string DocumentTypeAlias { get; set; }
-
+     
         /// <inheritdoc/>
         public IEnumerable<T> Ancestors<T>(int maxLevel = int.MaxValue)
         {
@@ -25,6 +27,35 @@ namespace Ariana.Umbraco.CMS.Models
         public IEnumerable<T> Children<T>()
         {
             return ContentHelper.Instance.GetChildren<T>(this.Id);
+        }
+
+
+        /// <inheritdoc/>
+        public virtual DateTime UpdateDate { get; set; }
+
+
+
+        public bool ExcludeFromXmlSitemap { get; set; }
+        public ChangeFrequency ChangeFrequency { get; set; }
+        public decimal Priority { get; set; }
+
+
+
+        public virtual string UrlAbsolute()
+        {
+            string url = ContentHelper.Instance.UmbracoHelper.UrlAbsolute(this.Id);
+
+            // Certain virtual pages such as Articulate blog pages only return a relative url.
+            //if (!url.IsAbsoluteUrl())
+            //{
+            //    string root = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority);
+            //    url = new Uri(new Uri(root, UriKind.Absolute), url).ToString();
+            //}
+
+            string root = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority);
+            url = new Uri(new Uri(root, UriKind.Absolute), url).ToString();
+
+            return url;
         }
     }
 }

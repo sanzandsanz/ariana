@@ -393,6 +393,7 @@
     <Content Include="Views\Error404.cshtml" />
     <Content Include="Views\GenericPage.cshtml" />
     <Content Include="Views\Shared\RobotsTxt.cshtml" />
+    <Content Include="Views\Shared\XmlSitemap.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
