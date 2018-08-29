@@ -214,6 +214,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\AppSettings.cs" />
     <Compile Include="Controllers\Error404Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />

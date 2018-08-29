@@ -1,9 +1,29 @@
+@using Ariana.Constants
 @using Ariana.Umbraco.Helpers
 @using Arina.Logic.Models
 @using Our.Umbraco.Ditto
 
 @model ImageModule
 
-<h2>@Model.Title</h2>
+<div class="module module-image">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                @if (Model.Image != null)
+                {
+                    <img src="@Model.Image.Url()"  alt="test" />
 
-<img src="@Model.Image.Url()" alt="test" />
+                    string imageMobile = Model.Image.GetCropUrl(AppSettings.ImageSizes.SixteenNineMobile);
+                    string imageDesktop = Model.Image.GetCropUrl(AppSettings.ImageSizes.SixteenNineDesktop);
+
+                    <picture>
+                        <source srcset="@imageMobile" media="(min-width: 768px)">
+                        <img srcset="@imageDesktop" alt="test">
+                    </picture>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
