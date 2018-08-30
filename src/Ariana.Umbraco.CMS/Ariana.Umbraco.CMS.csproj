@@ -201,6 +201,9 @@
     <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
       <HintPath>..\..\packages\UmbracoCms.Core.7.12.1\lib\net45\TidyNet.dll</HintPath>
     </Reference>
+    <Reference Include="uComponents.nuPickers, Version=1.7.0.300, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\nuPickers.1.7.0\lib\net45\uComponents.nuPickers.dll</HintPath>
+    </Reference>
     <Reference Include="umbraco, Version=1.0.6806.26196, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\UmbracoCms.Core.7.12.1\lib\net45\umbraco.dll</HintPath>
     </Reference>
@@ -239,6 +242,7 @@
     <Compile Include="Common\Helpers\NestedContentExtensions.cs" />
     <Compile Include="Common\Helpers\RazorTxtViewPage.cs" />
     <Compile Include="Common\Helpers\RazorXmlViewPage.cs" />
+    <Compile Include="ComponentModel\Attributes\Processors\NuPickerEnumAttribute.cs" />
     <Compile Include="Controllers\SiteMapController.cs" />
     <Compile Include="Controllers\RobotsTxtController.cs" />
     <Compile Include="Events\FrameworkEvents.cs" />

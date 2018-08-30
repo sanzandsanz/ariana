@@ -1,9 +1,7 @@
 ﻿namespace Ariana.Umbraco.ComponentModel
 {
     using System;
-
     using nuPickers;
-
     using Our.Umbraco.Ditto;
 
     /// <summary>
