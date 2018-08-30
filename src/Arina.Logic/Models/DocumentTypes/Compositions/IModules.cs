@@ -3,8 +3,8 @@ using Umbraco.Core.Models;
 
 namespace Ariana.Logic.Models
 {
-    public class Site
+    public interface IModules
     {
-        
+        IEnumerable<IPublishedContent> Modules { get; set; }
     }
 }

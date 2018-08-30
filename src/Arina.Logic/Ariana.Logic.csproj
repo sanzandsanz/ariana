@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ariana</RootNamespace>
     <AssemblyName>Ariana.Logic</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -214,11 +214,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\AppSettings.cs" />
+    <Compile Include="Controllers\Error404Controller.cs" />
+    <Compile Include="Controllers\GenericPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
+    <Compile Include="Models\DocumentTypes\Compositions\IModules.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ImageModule.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ContentModule.cs" />
-    <Compile Include="Models\DocumentTypes\Pages\Site.cs" />
+    <Compile Include="Models\DocumentTypes\Components\Site.cs" />
+    <Compile Include="Models\DocumentTypes\Pages\Error404.cs" />
+    <Compile Include="Models\DocumentTypes\Pages\GenericPage.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
+    <Compile Include="Models\DocumentTypes\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

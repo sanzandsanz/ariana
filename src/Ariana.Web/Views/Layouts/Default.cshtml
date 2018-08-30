@@ -1,13 +1,17 @@
 ﻿@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
 
 @inherits UmbracoViewPage<Ariana.Logic.Models.Site>
 
 @{
     Layout = null;
 
-    //Site site = ContentHelper.Instance.GetSite<Site>();
+    Site site = ContentHelper.Instance.GetSite<Site>();
+
+    var head = site.Settings.HtmlInjectors.Head;
 }
 
+<h1> Hello Sanjay </h1>
 @*<!DOCTYPE html>
 <html lang="@Model.CurrentCulture.TwoLetterISOLanguageName" prefix="og: http://ogp.me/ns#">
 <head>

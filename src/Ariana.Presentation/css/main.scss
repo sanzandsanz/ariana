@@ -1,0 +1,24 @@
+// Load the variables First
+@import 'site/variables/bootstrap';
+@import 'site/variables/colours';
+
+// Then load the vendor libraries.
+@import 'vendor/bootstrap-reboot-grid';
+@import 'vendor/swiper';
+
+// Load the resets next as these could override the vendor 
+// libraries but will set sane defaults outside the normal reboot.
+@import 'site/resets/svg';
+
+// Load the components that are shared across the entire brand regardless of module/page etc.
+@import 'site/components/header';
+@import 'site/components/footer';
+
+
+// Load the module css that is relevant to individual modules.
+@import 'site/modules/module';
+@import 'site/modules/module-unknown';
+@import 'site/modules/module-content';
+@import 'site/modules/module-image';
+@import 'site/modules/module-feature';
+@import 'site/modules/_module-feature-slider';
