@@ -237,6 +237,7 @@
     <Compile Include="Common\Helpers\ContentHelper.cs" />
     <Compile Include="Common\Helpers\ImageExtension.cs" />
     <Compile Include="Common\Helpers\NestedContentExtensions.cs" />
+    <Compile Include="Common\Helpers\RazorXmlViewPage.cs" />
     <Compile Include="Controllers\SiteMapController.cs" />
     <Compile Include="Controllers\RobotsTxtController.cs" />
     <Compile Include="Events\FrameworkEvents.cs" />

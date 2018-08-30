@@ -1,18 +1,10 @@
 ﻿@using Ariana.Umbraco.Models
 @using Ariana.Umbraco.Helpers
-
-@inherits UmbracoViewPage<Ariana.Umbraco.Models.XmlSitemap>
-
-@{
-    Layout = null; // Robots.txt doesn't need layout
-}
-
+@inherits RazorXmlViewPage<Ariana.Umbraco.Models.XmlSitemap>
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemalocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
     @foreach (SitemapItem item in Model.Items)
     {
         <url>
@@ -23,3 +15,9 @@
         </url>
     }
 </urlset>
+
+<!-- https://stackoverflow.com/questions/13730460/why-am-i-getting-this-error-about-xml-declaration 
+    
+   There shouldn't be any leading white space before ?xml tag
+    
+    -->
