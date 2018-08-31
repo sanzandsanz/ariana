@@ -18,10 +18,24 @@ namespace Ariana.Logic.Models
                 {
                     return htmlInjectors;
                 }
+
                 return new HtmlInjectorSettings();
             }
         }
 
-       
+
+        public NavigationSettings NavSettings
+        {
+            get
+            {
+                NavigationSettings navSettings = Children<NavigationSettings>().FirstOrDefault();
+                if (navSettings != null)
+                {
+                    return navSettings;
+                }
+
+                return new NavigationSettings();
+            }
+        }
     }
 }

@@ -58,6 +58,9 @@
     <Reference Include="Examine, Version=0.1.89.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Examine.0.1.89\lib\net45\Examine.dll</HintPath>
     </Reference>
+    <Reference Include="Gibe.LinkPicker.Umbraco, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UmbracoLinkPicker.1.4.1\lib\net45\Gibe.LinkPicker.Umbraco.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -261,6 +264,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App_Plugins\GibeLinkPicker\package.manifest" />
     <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
@@ -269,7 +273,16 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.html" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\da-DK.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-GB.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-US.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.css" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

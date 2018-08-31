@@ -55,6 +55,9 @@
     <Reference Include="Examine, Version=0.1.89.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Examine.0.1.89\lib\net45\Examine.dll</HintPath>
     </Reference>
+    <Reference Include="Gibe.LinkPicker.Umbraco, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UmbracoLinkPicker.1.4.1\lib\net45\Gibe.LinkPicker.Umbraco.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -224,14 +227,18 @@
     <Compile Include="Models\DocumentTypes\Modules\ImageModule.cs" />
     <Compile Include="Models\DocumentTypes\Modules\ContentModule.cs" />
     <Compile Include="Models\DocumentTypes\Components\Site.cs" />
+    <Compile Include="Models\DocumentTypes\Navigation\LinkMenuFolder.cs" />
+    <Compile Include="Models\DocumentTypes\Navigation\LinkMenuItem.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Error404.cs" />
     <Compile Include="Models\DocumentTypes\Pages\GenericPage.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
+    <Compile Include="Models\DocumentTypes\Libraries.cs" />
     <Compile Include="Models\DocumentTypes\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="App_Plugins\GibeLinkPicker\package.manifest" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +246,16 @@
       <Project>{000ef2ab-02f7-44a8-b449-36fd508af761}</Project>
       <Name>Ariana.Umbraco.CMS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.html" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\da-DK.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-GB.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-US.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.css" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />

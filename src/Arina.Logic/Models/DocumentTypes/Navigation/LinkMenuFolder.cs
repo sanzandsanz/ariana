@@ -7,8 +7,7 @@ using Ariana.Umbraco.CMS.Models;
 
 namespace Ariana.Logic.Models
 {
-    public class NavigationSettings : Component
+    public class LinkMenuFolder : Component
     {
-        public LinkMenuFolder PrimaryNavigation { get; set; }
     }
 }
