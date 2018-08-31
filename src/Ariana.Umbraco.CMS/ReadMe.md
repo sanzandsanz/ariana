@@ -44,3 +44,10 @@ The main purpose of this methode is to set the following
 Since the razor view using the Class, we can so use different properties like Html, Ajax, Model etc to render Html components 
 
 For example: Html.TextBoxFor(), Html.CheckBoxFor() etc.
+
+
+
+# Userful sites to know Surface Controller vs RenderMVC Controller
+
+http://www.jondjones.com/learn-umbraco-cms/umbraco-developers-guide/umbraco-and-mvc/what-is-an-umbraco-surface-controller
+To be really clear, if you have a web page and the only thing you want to do is display some text, then use RenderMvcController, or, a normal MVC controller. If you need a page that has a custom form on it, like a login form, a contact me form, or a search box uses a surface controller

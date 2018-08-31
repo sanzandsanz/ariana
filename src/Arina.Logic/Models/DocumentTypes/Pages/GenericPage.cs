@@ -7,5 +7,6 @@ namespace Ariana.Logic.Models
     public class GenericPage : Page, IModules
     {
         public IEnumerable<IPublishedContent> Modules { get; set; }
-    }
+        
+}
 }

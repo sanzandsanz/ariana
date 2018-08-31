@@ -397,6 +397,7 @@
     <Content Include="Views\GenericPage.cshtml" />
     <Content Include="Views\Shared\RobotsTxt.cshtml" />
     <Content Include="Views\Shared\XmlSitemap.cshtml" />
+    <Content Include="Views\Shared\_MetaData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

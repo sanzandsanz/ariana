@@ -248,6 +248,7 @@
     <Compile Include="Events\FrameworkEvents.cs" />
     <Compile Include="Events\RouteBuilder.cs" />
     <Compile Include="Handlers\Error404Handler.cs" />
+    <Compile Include="Models\DocumentTypes\Compositions\IMeta.cs" />
     <Compile Include="Models\DocumentTypes\Compositions\IXmlSitemap.cs" />
     <Compile Include="Models\DocumentTypes\RobotsTxt.cs" />
     <Compile Include="Models\DocumentTypes\Component.cs" />
