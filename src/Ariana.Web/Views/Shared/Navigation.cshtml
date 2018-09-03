@@ -1,0 +1,15 @@
+﻿@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
+@model NavigationSettings
+
+@if (Model != null && Model.PrimaryNavigation != null)
+{
+    <ul>
+        @foreach (LinkMenuItem primaryMenuItem in Model.PrimaryNavigation.Children<LinkMenuItem>())
+        {
+            <li>
+                <a href="@primaryMenuItem.Link.Url">@primaryMenuItem.Link.Url</a>
+            </li>
+        }
+    </ul>
+}

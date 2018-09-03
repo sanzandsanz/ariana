@@ -71,6 +71,9 @@
     <Reference Include="Examine, Version=0.1.89.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Examine.0.1.89\lib\net45\Examine.dll</HintPath>
     </Reference>
+    <Reference Include="Gibe.LinkPicker.Umbraco, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UmbracoLinkPicker.1.4.1\lib\net45\Gibe.LinkPicker.Umbraco.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -208,6 +211,9 @@
     <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
       <HintPath>..\..\packages\UmbracoCms.Core.7.12.1\lib\net45\TidyNet.dll</HintPath>
     </Reference>
+    <Reference Include="uComponents.nuPickers, Version=1.7.0.300, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\nuPickers.1.7.0\lib\net45\uComponents.nuPickers.dll</HintPath>
+    </Reference>
     <Reference Include="umbraco, Version=1.0.6806.26196, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\UmbracoCms.Core.7.12.1\lib\net45\umbraco.dll</HintPath>
     </Reference>
@@ -260,6 +266,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.html" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\da-DK.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-GB.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\Lang\en-US.xml" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.controller.js" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.css" />
+    <Content Include="App_Plugins\GibeLinkPicker\picker.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -316,6 +330,7 @@
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncBackOffice.Config" />
     <Content Include="App_Plugins\uSync\package.manifest" />
+    <Content Include="App_Plugins\GibeLinkPicker\package.manifest" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -394,6 +409,9 @@
     <Content Include="Views\GenericPage.cshtml" />
     <Content Include="Views\Shared\RobotsTxt.cshtml" />
     <Content Include="Views\Shared\XmlSitemap.cshtml" />
+    <Content Include="Views\Shared\_MetaData.cshtml" />
+    <Content Include="Views\Shared\Navigation.cshtml" />
+    <Content Include="Views\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

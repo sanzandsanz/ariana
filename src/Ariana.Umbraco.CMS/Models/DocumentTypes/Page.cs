@@ -1,4 +1,6 @@
-﻿namespace Ariana.Umbraco.CMS.Models
+﻿using Ariana.Umbraco.CMS.Models.MediaTypes;
+
+namespace Ariana.Umbraco.CMS.Models
 {
     using Ariana.Umbraco.Helpers;
     using System;
@@ -10,7 +12,7 @@
 
     [DittoLazy]
     [UmbracoPicker]
-    public class Page : IXmlSitemap
+    public class Page : IXmlSitemap, IMeta
     {
         /// <inheritdoc/>
         public virtual int Id { get; set; }
@@ -29,17 +31,12 @@
             return ContentHelper.Instance.GetChildren<T>(this.Id);
         }
 
-
         /// <inheritdoc/>
         public virtual DateTime UpdateDate { get; set; }
-
-
 
         public bool ExcludeFromXmlSitemap { get; set; }
         public ChangeFrequency ChangeFrequency { get; set; }
         public decimal Priority { get; set; }
-
-
 
         public virtual string UrlAbsolute()
         {
@@ -57,5 +54,16 @@
 
             return url;
         }
+
+
+        // Open Graph
+        public string BrowserTitle { get; set; }
+        public string BrowserDescription { get; set; }
+        public string OpenGraphTitle { get; set; }
+        public string OpenGraphType { get; set; }
+        public Image OpenGraphImage { get; set; }
+
+        [DittoIgnore]
+        public string OpenGraphUrl => this.UrlAbsolute();
     }
 }
