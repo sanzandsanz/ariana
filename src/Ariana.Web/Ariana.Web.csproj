@@ -411,6 +411,7 @@
     <Content Include="Views\Shared\XmlSitemap.cshtml" />
     <Content Include="Views\Shared\_MetaData.cshtml" />
     <Content Include="Views\Shared\Navigation.cshtml" />
+    <Content Include="Views\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

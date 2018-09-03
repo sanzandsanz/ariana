@@ -8,9 +8,8 @@
         @foreach (LinkMenuItem primaryMenuItem in Model.PrimaryNavigation.Children<LinkMenuItem>())
         {
             <li>
-                 @primaryMenuItem.Link.Url
+                <a href="@primaryMenuItem.Link.Url">@primaryMenuItem.Link.Url</a>
             </li>
-
         }
     </ul>
 }

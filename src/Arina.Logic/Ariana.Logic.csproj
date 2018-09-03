@@ -220,6 +220,7 @@
     <Compile Include="Constants\AppSettings.cs" />
     <Compile Include="Controllers\Error404Controller.cs" />
     <Compile Include="Controllers\GenericPageController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
@@ -233,6 +234,7 @@
     <Compile Include="Models\DocumentTypes\Pages\GenericPage.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
     <Compile Include="Models\DocumentTypes\Libraries.cs" />
+    <Compile Include="Models\DocumentTypes\Pages\Search.cs" />
     <Compile Include="Models\DocumentTypes\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
