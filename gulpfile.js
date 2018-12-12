@@ -6,7 +6,8 @@ var images = require('bgtm-engine-images');
 
 var config = {
     src: 'src/Ariana.Presentation/',
-    dest: 'src/Ariana.Web/static/'
+    // dest: 'src/Ariana.Web/static/' -- Web project
+    dest: 'publishSite/static/' 
 };
 
 tm.add('scss', {
