@@ -14,11 +14,13 @@
 @import 'site/components/header';
 @import 'site/components/footer';
 @import 'site/components/primary-navigation';
+@import 'site/components/cta-image';
 
 
 // Load the module css that is relevant to individual modules.
 @import 'site/modules/module';
 @import 'site/modules/module-unknown';
+@import 'site/modules/module-hero-image';
 @import 'site/modules/module-content';
 @import 'site/modules/module-image';
 @import 'site/modules/module-feature';

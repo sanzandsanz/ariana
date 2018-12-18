@@ -1,0 +1,54 @@
+@using Arina.Logic.Models
+
+@model Ariana.Logic.Models.Home
+
+<nav id="primary-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="brand">
+                    <h2>Ariana </h2>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="inner-wrap">
+
+                    @foreach(LinkMenuFolder menu in Model.Navigation)
+                    {
+
+                    }
+
+                    <ul>
+                        <li>
+                            <a href="/selected-work/selected-work.html" data-content-type="work">
+                                <!--<a href="selected-work.html" data-content-type="work">-->
+                                <span class="txt">Selected Work</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-content-type="expertise">
+                                <span class="txt">Expertise</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    Document
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#"> Regex </a>
+                                    <a href="#"> Umbraco </a>
+                                    <a href="#"> Sitecore </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</nav>

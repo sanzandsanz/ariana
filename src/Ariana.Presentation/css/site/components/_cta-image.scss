@@ -1,0 +1,23 @@
+.cta-image {
+    border-radius: 6px;
+    transition: transform .5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+    &:hover {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.2);
+    }
+
+    h2{
+        text-align: center;
+    }
+    
+    margin: 15px 0;
+}

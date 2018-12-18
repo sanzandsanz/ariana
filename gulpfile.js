@@ -57,4 +57,22 @@ tm.add('images', {
     }
 });
 
+
+tm.add('fonts', {
+    runOnBuild: true,
+    watch: true,
+    watchSource: [
+        config.src + 'fonts/**/*'
+    ],
+    liveReload: true,
+    engine: function(tm, engineOptions) {
+        return this.src(engineOptions.src)
+            .pipe(this.dest(engineOptions.dest));
+    },
+    engineOptions: {
+        src: config.src + 'fonts/**/*',
+        dest: config.dest + 'fonts/'
+    }
+});
+
 tm.run();

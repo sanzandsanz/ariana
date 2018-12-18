@@ -8,5 +8,7 @@ namespace Ariana.Logic.Models
     public class Home : Page, IModules
     {
         public IEnumerable<IPublishedContent> Modules { get; set; }
+
+        public IEnumerable<LinkMenuFolder> PrimaryNavigation { get; set; }
     }
 }
