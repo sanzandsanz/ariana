@@ -23,19 +23,6 @@ namespace Ariana.Logic.Models
             }
         }
 
-
-        public NavigationSettings NavSettings
-        {
-            get
-            {
-                NavigationSettings navSettings = Children<NavigationSettings>().FirstOrDefault();
-                if (navSettings != null)
-                {
-                    return navSettings;
-                }
-
-                return new NavigationSettings();
-            }
-        }
+        
     }
 }

@@ -6,8 +6,12 @@ var images = require('bgtm-engine-images');
 
 var config = {
     src: 'src/Ariana.Presentation/',
+<<<<<<< HEAD
     // dest: 'src/Ariana.Web/static/' -- Web project
     dest: 'publishSite/static/' 
+=======
+    dest: 'publish/static/'
+>>>>>>> 7edbb73f089809e42a8cb23114b35bbb2a9aba40
 };
 
 tm.add('scss', {
@@ -55,6 +59,24 @@ tm.add('images', {
     engineOptions: {
         'src': config.src + 'images/**/*',
         'dest': config.dest + 'images/'
+    }
+});
+
+
+tm.add('fonts', {
+    runOnBuild: true,
+    watch: true,
+    watchSource: [
+        config.src + 'fonts/**/*'
+    ],
+    liveReload: true,
+    engine: function(tm, engineOptions) {
+        return this.src(engineOptions.src)
+            .pipe(this.dest(engineOptions.dest));
+    },
+    engineOptions: {
+        src: config.src + 'fonts/**/*',
+        dest: config.dest + 'fonts/'
     }
 });
 

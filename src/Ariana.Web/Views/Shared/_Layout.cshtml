@@ -5,7 +5,7 @@
 @{
     Site site = ContentHelper.Instance.GetSite<Site>();
     var head = site.Settings.HtmlInjectors.Head;
-    var navigationSettings = site.Settings.NavSettings;
+    //var navigationSettings = site.Settings.NavSettings;
 }
 <!DOCTYPE html>
 <html>
@@ -32,7 +32,7 @@
 </div>
 
 <div class="navigation-bar">
-    @Html.Partial("~/Views/Shared/Navigation.cshtml", navigationSettings)
+    @*@Html.Partial("~/Views/Shared/Navigation.cshtml", navigationSettings)*@
 </div>
 
 <div class="container body-content">

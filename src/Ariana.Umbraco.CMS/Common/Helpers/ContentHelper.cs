@@ -190,7 +190,6 @@ namespace Ariana.Umbraco.Helpers
         }
 
 
-
         /// <summary>
         /// Gets the node matching the given id.
         /// </summary>

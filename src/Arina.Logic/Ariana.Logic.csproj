@@ -222,6 +222,7 @@
     <Compile Include="Controllers\GenericPageController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extensions\ContentHelperExtension.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
     <Compile Include="Models\DocumentTypes\Compositions\IModules.cs" />
@@ -230,6 +231,7 @@
     <Compile Include="Models\DocumentTypes\Components\Site.cs" />
     <Compile Include="Models\DocumentTypes\Navigation\LinkMenuFolder.cs" />
     <Compile Include="Models\DocumentTypes\Navigation\LinkMenuItem.cs" />
+    <Compile Include="Models\DocumentTypes\Navigation\NavigationRoot.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Error404.cs" />
     <Compile Include="Models\DocumentTypes\Pages\GenericPage.cs" />
     <Compile Include="Models\DocumentTypes\Pages\Home.cs" />
