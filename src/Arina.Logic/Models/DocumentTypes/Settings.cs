@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ariana.Umbraco.CMS.Models;
+﻿using System.Linq;
+using Umbraco.Core.Models;
 
 namespace Ariana.Logic.Models
 {
+    using Ariana.Umbraco.CMS.Models;
+
     public class Settings : Component
     {
         public HtmlInjectorSettings HtmlInjectors
@@ -23,6 +21,6 @@ namespace Ariana.Logic.Models
             }
         }
 
-        
+        public virtual IPublishedContent TopNavigation { get; set; }
     }
 }

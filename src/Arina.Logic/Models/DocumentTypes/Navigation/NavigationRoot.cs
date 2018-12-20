@@ -11,5 +11,6 @@ namespace Ariana.Models.DocumentTypes.Navigation
     public class NavigationRoot : Component
     {
         public List<LinkMenuFolder> MenuFolders => this.Children<LinkMenuFolder>().ToList();
+        public List<LinkMenuItem> MenuItems => this.Children<LinkMenuItem>().ToList();
     }
 }

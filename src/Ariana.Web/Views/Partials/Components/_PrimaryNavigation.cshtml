@@ -1,20 +1,14 @@
 @using Ariana.Extensions
 @using Ariana.Logic.Models
 @using Ariana.Models.DocumentTypes.Navigation
+@using Ariana.Umbraco.CMS.Models
 @using Ariana.Umbraco.Helpers
 @using Arina.Logic.Models
+@using Our.Umbraco.Ditto
 
 @{
     Settings siteSetting = ContentHelper.Instance.GetSiteSettings();
-    NavigationRoot root = siteSetting.Children<NavigationRoot>().FirstOrDefault();
 }
-
-
-@if (root == null)
-{
-    return;
-}
-
 
 <nav id="primary-navigation">
     <div class="container">
@@ -27,13 +21,20 @@
             <div class="col-sm-9">
                 <div class="inner-wrap">
                     <ul>
-                        @foreach (LinkMenuFolder menuFolder in root.MenuFolders)
+                        @foreach (IPublishedContent topMenu in siteSetting.TopNavigation.Children)
                         {
-                            <li>
-                                <a href="#" data-content-type="work">
-                                    <span class="txt">Selected Work</span>
-                                </a>
-                            </li>
+                            if (topMenu.DocumentTypeAlias == "linkMenuItem")
+                            {
+                                LinkMenuItem menuItem = topMenu.As<LinkMenuItem>();
+
+                                <li>
+                                    <a href="@menuItem.Link.Url">@menuItem.Title </a>
+                                </li>
+                            }
+                            else if (topMenu.DocumentTypeAlias == "linkMenuFolder")
+                            {
+                                // Create dropdown list 
+                            }
                         }
                     </ul>
                 </div>
