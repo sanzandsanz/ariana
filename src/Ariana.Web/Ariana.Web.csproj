@@ -266,6 +266,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\css\bfadti.min.css" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-brands-400.svg" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-regular-400.svg" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-solid-900.svg" />
     <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.controller.js" />
     <Content Include="App_Plugins\GibeLinkPicker\Dialogs\linkpicker.html" />
     <Content Include="App_Plugins\GibeLinkPicker\Lang\da-DK.xml" />
@@ -331,6 +335,20 @@
     <Content Include="config\uSyncBackOffice.Config" />
     <Content Include="App_Plugins\uSync\package.manifest" />
     <Content Include="App_Plugins\GibeLinkPicker\package.manifest" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\package.manifest" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-solid-900.woff2" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-solid-900.woff" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-solid-900.ttf" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-solid-900.eot" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-regular-400.woff2" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-regular-400.woff" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-regular-400.ttf" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-regular-400.eot" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-brands-400.woff2" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-brands-400.woff" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-brands-400.ttf" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\fonts\fa-brands-400.eot" />
+    <Content Include="App_Plugins\BlanksyFontAwesomeDocTypeIcons\css\bfadti.min.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

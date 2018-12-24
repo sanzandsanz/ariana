@@ -1,15 +1,52 @@
 ﻿@using Ariana.Logic.Models
 @using Ariana.Umbraco.Helpers
-@model NavigationSettings
+@using Our.Umbraco.Ditto
 
-@if (Model != null && Model.PrimaryNavigation != null)
-{
-    <ul>
-        @foreach (LinkMenuItem primaryMenuItem in Model.PrimaryNavigation.Children<LinkMenuItem>())
-        {
-            <li>
-                <a href="@primaryMenuItem.Link.Url">@primaryMenuItem.Link.Url</a>
-            </li>
-        }
-    </ul>
+@{
+    Site site = ContentHelper.Instance.GetSite<Site>();
 }
+
+<nav id="primary-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="brand">
+                    <h2> @site.Brand </h2>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="inner-wrap">
+                    <ul>
+                        @foreach (IPublishedContent navItem in site.PrimaryNavigation.Children<IPublishedContent>())
+                        {
+                            if (navItem.Children.Any() && navItem.DocumentTypeAlias.Equals("linkMenuFolder")) // LinkMenuFolder is true
+                            {
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            <div> @navItem.Name</div>
+                                            <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            @foreach (LinkMenuItem linkMenuItem in navItem.Children.As<LinkMenuItem>())
+                                            {
+                                                <a href="@linkMenuItem.Link.Url"> @linkMenuItem.Link.Name  </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                            else
+                            {
+                                LinkMenuItem linkMenuItem = navItem.As<LinkMenuItem>();
+                                <li>
+                                    <a href="@linkMenuItem.Link.Url"> @linkMenuItem.Link.Name  </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

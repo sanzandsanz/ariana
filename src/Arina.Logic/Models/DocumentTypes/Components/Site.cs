@@ -22,5 +22,9 @@ namespace Ariana.Logic.Models
                 return new Settings();
             }
         }
+
+        public virtual IPublishedContent PrimaryNavigation { get; set; }
+
+        public virtual string Brand { get; set; }
     }
 }

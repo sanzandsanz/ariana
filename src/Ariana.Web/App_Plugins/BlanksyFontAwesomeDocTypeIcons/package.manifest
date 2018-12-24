@@ -1,0 +1,5 @@
+{
+    css: [
+        '~/App_Plugins/BlanksyFontAwesomeDocTypeIcons/css/bfadti.min.css'
+    ]
+}
