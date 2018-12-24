@@ -3482,10 +3482,6 @@ header nav > ul > li:hover > ul {
   margin: 64px 0;
 }
 
-.module:first-child {
-  margin-top: 0;
-}
-
 .module:last-child {
   margin-bottom: 0;
 }

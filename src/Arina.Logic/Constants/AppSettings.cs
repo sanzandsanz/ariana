@@ -23,6 +23,9 @@
             /// 700x394 - The identifier for the cropping images to sixteen by nine on mobile.
             /// </summary>
             public const string SixteenNineMobile = "sixteen-nine-mobile";
+
+            public const string CTAImageText_150x150 = "cta-image-text-150x150";
+
         }
     }
 }

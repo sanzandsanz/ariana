@@ -1,0 +1,23 @@
+@using Ariana.Logic.Models
+@using Ariana.Constants
+@using Ariana.Umbraco.Helpers
+
+@model CTAImageCollectionModule
+
+<div class="module module-cta-image-text-collection">
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (CTAImageText imageText in Model.CTACollection)
+            {
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="cta-image">
+                        <img src="@imageText.Image.GetCropUrl(AppSettings.ImageSizes.CTAImageText_150x150, true, true, 100)" alt="@imageText.Image.FileName" />
+                        <div>
+                            <h2> @imageText.Title </h2>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
