@@ -1,11 +1,14 @@
 ﻿@using Ariana.Logic.Models
 @using Ariana.Umbraco.Helpers
+@using Ariana.Constants
 @inherits UmbracoViewPage<Ariana.Umbraco.CMS.Models.Page>
 
 @{
     Site site = ContentHelper.Instance.GetSite<Site>();
     var head = site.Settings.HtmlInjectors.Head;
     var navigationSettings = site.Settings.NavSettings;
+    var backgroundImage = site.BackgroundImage.GetCropUrl(AppSettings.ImageSizes.SiteBackgroundImage_1200x600);
+
 }
 <!DOCTYPE html>
 <html>
@@ -14,7 +17,8 @@
     @Html.Raw(head)
     @Html.RenderCacheBusterCss("/static/css/main.min.css")
 </head>
-<body>
+
+<body style="background-image: url('@backgroundImage')">
 
     @{ Html.RenderPartial("~/Views/Shared/Navigation.cshtml"); }
     @*<div class="navbar navbar-inverse navbar-fixed-top">

@@ -1,3 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+body {
+  color: white;
+}
+
 /*!
  * Bootstrap Reboot v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5,7 +10,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 @-ms-viewport {
   width: device-width;
 }
@@ -3343,7 +3347,6 @@ header nav > ul > li:hover > ul {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  background: #6A5ACD;
   /* Dropdown button */
   /* Show the dropdown menu on hover */
   /* Dropdown content (hidden by default) */
@@ -3452,6 +3455,8 @@ header nav > ul > li:hover > ul {
 }
 
 .cta-image {
+  color: red;
+  background: white;
   border-radius: 6px;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
@@ -3501,6 +3506,10 @@ header nav > ul > li:hover > ul {
     width: 100%;
     max-height: 350px;
   }
+}
+
+.module-content {
+  color: white;
 }
 
 .module-image img {

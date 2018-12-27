@@ -30,7 +30,7 @@
                                         <div class="dropdown-content">
                                             @foreach (LinkMenuItem linkMenuItem in navItem.Children.As<LinkMenuItem>())
                                             {
-                                                <a href="@linkMenuItem.Link.Url"> @linkMenuItem.Link.Name  </a>
+                                                <a href="@linkMenuItem.Link.Url">@(linkMenuItem.Title ?? linkMenuItem.Link.Name)  </a>
                                             }
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@
                             {
                                 LinkMenuItem linkMenuItem = navItem.As<LinkMenuItem>();
                                 <li>
-                                    <a href="@linkMenuItem.Link.Url"> @linkMenuItem.Link.Name  </a>
+                                    <a href="@linkMenuItem.Link.Url"> @(linkMenuItem.Title ?? linkMenuItem.Link.Name)  </a>
                                 </li>
                             }
                         }

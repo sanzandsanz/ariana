@@ -1,9 +1,11 @@
 // Load the variables First
 @import 'site/variables/bootstrap';
 @import 'site/variables/colours';
+@import 'site/variables/body';
 
 // Then load the vendor libraries.
 @import 'vendor/bootstrap-reboot-grid';
+@import 'vendor/bootstrap-nav-bar';
 @import 'vendor/swiper';
 
 // Load the resets next as these could override the vendor 

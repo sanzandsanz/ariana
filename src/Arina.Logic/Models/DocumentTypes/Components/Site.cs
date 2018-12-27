@@ -1,10 +1,12 @@
-﻿using Ariana.Umbraco.CMS.Models;
-using System.Collections.Generic;
-using System.Linq;
-using Umbraco.Core.Models;
+﻿using Umbraco.Core.Models;
 
 namespace Ariana.Logic.Models
 {
+    using Ariana.Umbraco.CMS.Models;
+    using Ariana.Umbraco.CMS.Models.MediaTypes;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class Site : Component
     {
         /// <summary>
@@ -26,5 +28,9 @@ namespace Ariana.Logic.Models
         public virtual IPublishedContent PrimaryNavigation { get; set; }
 
         public virtual string Brand { get; set; }
+
+        public virtual Image BackgroundImage { get; set; }
+
+        public virtual string SiteTitle { get; set; }
     }
 }
