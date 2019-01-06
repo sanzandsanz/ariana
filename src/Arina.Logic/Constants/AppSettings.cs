@@ -24,8 +24,12 @@
             /// </summary>
             public const string SixteenNineMobile = "sixteen-nine-mobile";
 
+
+
+
             public const string CTAImageText_150x150 = "cta-image-text-150x150";
             public const string SiteBackgroundImage_1200x600 = "site-background-image-1200x600";
+            public const string BannerImage_1680x700 = "banner-image-1680x700";
 
         }
     }

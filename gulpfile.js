@@ -37,6 +37,8 @@ tm.add('js', {
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/bootstrap/dist/js/boostrap.min.js',
+            config.src + 'js/components/TopNav.js',
+            config.src + 'js/all.js',
             config.src + 'js/vendor/*.js'
         ],
         'dest': config.dest + 'js/',

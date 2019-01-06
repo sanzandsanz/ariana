@@ -1,6 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 body {
   color: white;
+  background-color: #003f0a;
+}
+
+body.background-image {
+  background-size: cover;
+}
+
+html body {
+  background-color: #003f0a;
 }
 
 /*!
@@ -3340,118 +3349,162 @@ header nav > ul > li:hover > ul {
   display: block;
 }
 
-#primary-navigation {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+#topNavigation {
+  background: #005C48;
   position: relative;
-  /* Dropdown button */
-  /* Show the dropdown menu on hover */
-  /* Dropdown content (hidden by default) */
 }
 
-#primary-navigation .brand {
-  padding: 25px 0;
+#topNavigation ul {
+  color: white;
   text-align: center;
-  font-size: 28px;
-  line-height: 30px;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+  display: none;
+  border-top: 2px solid white;
+}
+
+#topNavigation li {
+  list-style-type: none;
+  padding: 9px;
+}
+
+#topNavigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
   color: white;
 }
 
-#primary-navigation .inner-wrap {
-  padding: 20px;
-}
-
-#primary-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#primary-navigation li {
-  display: inline-block;
-  margin-left: 24px;
-}
-
-#primary-navigation a {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-bottom: 6px;
-}
-
-#primary-navigation a:hover {
+#topNavigation a:hover {
+  padding-bottom: 5px;
   border-bottom: 2px solid white;
 }
 
-#primary-navigation .dropdown .dropbtn {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 26px;
+#topNavigation .handle {
+  display: block;
+  background-color: #005C48;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  float: left;
+}
+
+#topNavigation .menu-icon div {
+  background-color: white;
+  border-radius: 2px;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+}
+
+#topNavigation .dropdown .dropbtn {
   text-transform: uppercase;
+  margin: 0;
   color: #ffffff;
   border: none;
   outline: none;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  /* Important for vertical align on mobile phones */
-  margin: 0;
-  /* Important for vertical align on mobile phones */
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 18px;
 }
 
-#primary-navigation .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-#primary-navigation .dropdown:hover .dropdown-content:before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 14px 18px 14px;
-  border-color: transparent transparent #f9f9f9 transparent;
-  position: absolute;
-  top: -18px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-filter: drop-shadow(0px -2px 1px #dee2e5);
-  filter: drop-shadow(0px -2px 1px #dee2e5);
-}
-
-#primary-navigation .dropdown-content {
-  left: 0;
+#topNavigation .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  padding: 6px 6px;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
   color: white;
 }
 
-#primary-navigation .dropdown-content a {
+#topNavigation .dropdown-content a {
   float: none;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-  color: darkblue;
+  color: white;
+  white-space: nowrap;
 }
 
-#primary-navigation .dropdown-content a:hover {
-  color: #6A5ACD;
+#topNavigation .dropdown-content a:hover {
+  color: #003f0a;
   border-bottom: 0;
+}
+
+#topNavigation .brand {
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 12px 0;
+  margin-left: 80px;
+}
+
+@media (min-width: 768px) {
+  #topNavigation {
+    background: hotpink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: none;
+  }
+  #topNavigation .brand {
+    margin-left: 0;
+    float: left;
+    padding-left: 15px;
+  }
+  #topNavigation ul {
+    display: block;
+  }
+  #topNavigation .menu-icon {
+    display: none;
+  }
+  #topNavigation li {
+    display: inline-block;
+    padding: 20px;
+  }
+  #topNavigation .handle {
+    width: 100%;
+    background-color: #005C48;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    float: none;
+  }
+  #topNavigation .dropdown {
+    position: relative;
+  }
+  #topNavigation .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #topNavigation .dropdown-content {
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+  }
+  #topNavigation .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: #003f0a;
+  }
+  #topNavigation .dropdown-content a:hover {
+    color: #6A5ACD;
+    border-bottom: 0;
+  }
 }
 
 .cta-image {
@@ -3497,14 +3550,32 @@ header nav > ul > li:hover > ul {
   color: #FFFFFF;
 }
 
-.module-hero-image img {
-  max-height: 500px;
+#hero-banner {
+  height: 400px;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-banner .title {
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+
+#hero-banner .title h1 {
+  color: white;
+  text-shadow: 2px 2px 5px #003f0a;
 }
 
 @media (min-width: 768px) {
-  .module-hero-image img {
-    width: 100%;
-    max-height: 350px;
+  #hero-banner {
+    height: 600px;
+  }
+  #hero-banner .title h1 {
+    font-size: 48px;
+    line-height: 52px;
   }
 }
 

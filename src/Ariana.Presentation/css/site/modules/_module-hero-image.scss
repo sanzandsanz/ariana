@@ -1,19 +1,27 @@
-.module-hero-image{
-    
-    img{
-        max-height: 500px;
-    }
+#hero-banner {
+    height: 400px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-
-    @media(min-width: 768px){
-        
-        img {
-            width:100%;
-            max-height: 350px;
+    .title {
+        position: relative;
+        top: 40%;
+        text-align: center;
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 5px $bgGreen;
         }
     }
+    @media (min-width: 768px) {
+        height: 600px;
 
-    @media(min-width: 992px){
-
+        .title {
+            h1 {
+                font-size: 48px;
+                line-height: 52px;
+            }
+        }
     }
 }

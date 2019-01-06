@@ -18,9 +18,10 @@
     @Html.RenderCacheBusterCss("/static/css/main.min.css")
 </head>
 
-<body style="background-image: url('@backgroundImage')">
+<body>
 
-    @{ Html.RenderPartial("~/Views/Shared/Navigation.cshtml"); }
+
+    @{ Html.RenderPartial("~/Views/Shared/_TopNavigation.cshtml"); }
     @*<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -41,9 +42,13 @@
             @Html.Partial("~/Views/Shared/Navigation.cshtml", navigationSettings)
         </div>*@
 
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    @*<div class="container body-content">
+
+    </div>*@
+
+    @RenderBody()
+
+
     @Html.RenderCacheBusterJavaScript("/static/js/main.min.js")
 </body>
 </html>

@@ -432,6 +432,7 @@
     <Content Include="Views\Search.cshtml" />
     <Content Include="Views\Partials\Components\_PrimaryNavigation.cshtml" />
     <Content Include="Views\Partials\Modules\_CTAImageCollectionModule.cshtml" />
+    <Content Include="Views\Shared\_TopNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

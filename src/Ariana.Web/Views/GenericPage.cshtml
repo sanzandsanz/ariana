@@ -1,6 +1,9 @@
 ﻿@using Ariana.Logic.Models
 @using Ariana.Umbraco.Helpers
+@using Ariana.Constants
 
 @inherits UmbracoViewPage<Ariana.Logic.Models.GenericPage>
+
+@{ Html.RenderPartial("~/Views/Partials/Components/_BannerImage.cshtml", Model); }
 
 @Html.NestedContent(Model.Modules, null, "~/Views/Partials/Modules/")

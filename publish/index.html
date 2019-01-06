@@ -12,13 +12,18 @@
 </head>
 
 <body>
+    
     <nav id="topNavigation">
+
         <div class="handle">
             <div class="menu-icon">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+        </div>
+        <div class="brand">
+            <h2>Ariana Bajracharya</h2>
         </div>
         <div class="navigation-items">
             <ul>
@@ -47,18 +52,37 @@
                 </li>
             </ul>
         </div>
-
     </nav>
 
+    <style>
+        #hero-banner {
+            background-image: url('https://picsum.photos/600/600/?image=6');
+        }
 
+        @media only screen and (min-width: 768px) {
+            #hero-banner {
+                background-image: url('https://picsum.photos/1680/700?image=5');
+            }
+        }
+    </style>
 
-    <!-- <div class="modue-hero-image">
-            <img src="https://picsum.photos/800/600/?random">
-    </div> -->
+    <div id="hero-banner">
+        <div class="title">
+            <h1> My Hero Banner </h1>
+        </div>
+    </div>
     <!-- <div id="HeroImage" class="module module-hero-image">
         <img src="https://picsum.photos/1600/800?image=89" alt="Image" />
     </div> -->
+    <div class="content">
+            <iframe id="youtube-video-banner" class="youtube-video-banner" data-youtube-id="CZgmoTYRt9E" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/CZgmoTYRt9E?showinfo=0&amp;controls=0&amp;rel=0&amp;autoplay=0&amp;loop=1&amp;modestbranding=1&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sydneyaquarium.com.au&amp;widgetid=1" __idm_id__="395471873"></iframe>
+        </div>
 
+    <iframe 
+    width="100%" height="500" 
+    src="https://www.youtube.com/embed/CZgmoTYRt9E?showinfo=0&controls=0&rel=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&;enablejsapi=1&origin=https%3A%2F%2Fwww.sydneyaquarium.com.au&widgetid=1"
+     frameborder="0" allowfullscreen>
+    </iframe>
     <div class="module module-image-carousel">
         <marquee behavior="alternate">
             <img src="https://picsum.photos/450/300/?random">

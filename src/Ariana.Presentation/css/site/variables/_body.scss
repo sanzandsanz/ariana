@@ -1,3 +1,18 @@
 body {
     color: white;
+    background-color: #003f0a;
+
+    &.background-image {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+html{
+    body
+     {
+        background-color: #003f0a;
+    }
 }

@@ -1,0 +1,31 @@
+@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
+@using Ariana.Constants
+
+@inherits UmbracoViewPage<Ariana.Logic.Models.GenericPage>
+
+@if (Model.HeroBannerImage != null)
+{
+    string bannerImage = Model.HeroBannerImage.GetCropUrl(AppSettings.ImageSizes.BannerImage_1680x700);
+
+    <style type="text/css">
+        #hero-banner {
+            background-image: url('https://picsum.photos/600/600/?image=6');
+        }
+
+        @@media only screen and (min-width: 768px) {
+            #hero-banner {
+                background-image: url('@Html.Raw(bannerImage)');
+            }
+        }
+    </style>
+
+    <div id="hero-banner">
+        <div class="title">
+            @if (!string.IsNullOrEmpty(Model.HeroTitle))
+            {
+                <h1> @Model.HeroTitle </h1>
+            }
+        </div>
+    </div>
+}

@@ -1,0 +1,54 @@
+@using Arina.Logic.Models
+@using Ariana.Logic.Models
+@using Ariana.Umbraco.Helpers
+@using Our.Umbraco.Ditto
+
+@{
+    Site site = ContentHelper.Instance.GetSite<Site>();
+}
+
+<nav id="topNavigation">
+
+    <div class="handle">
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="brand">
+        <h2> @site.Brand </h2>
+    </div>
+    <div class="navigation-items">
+        <ul>
+
+            @foreach (IPublishedContent navItem in site.PrimaryNavigation.Children<IPublishedContent>())
+            {
+                if (navItem.Children.Any() && navItem.DocumentTypeAlias.Equals("linkMenuFolder")) // LinkMenuFolder is true
+                {
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div> @navItem.Name</div>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                @foreach (LinkMenuItem linkMenuItem in navItem.Children.As<LinkMenuItem>())
+                                {
+                                    <a href="@linkMenuItem.Link.Url">@(linkMenuItem.Title ?? linkMenuItem.Link.Name)  </a>
+                                }
+                            </div>
+                        </div>
+                    </li>
+                }
+                else
+                {
+                    LinkMenuItem linkMenuItem = navItem.As<LinkMenuItem>();
+                    <li>
+                        <a href="@linkMenuItem.Link.Url"> @(linkMenuItem.Title ?? linkMenuItem.Link.Name)  </a>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+    </nav>
