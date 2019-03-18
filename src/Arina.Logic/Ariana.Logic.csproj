@@ -218,10 +218,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\AppSettings.cs" />
+    <Compile Include="Controllers\API\SearchAPIController.cs" />
     <Compile Include="Controllers\Error404Controller.cs" />
     <Compile Include="Controllers\GenericPageController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Events\ApplicationEvents.cs" />
+    <Compile Include="Events\WebApiConfig.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\NavigationSettings.cs" />
     <Compile Include="Models\DocumentTypes\Components\Settings\HtmlInjectorSettings.cs" />
     <Compile Include="Models\DocumentTypes\Compositions\IModules.cs" />
