@@ -1,0 +1,98 @@
+#primary-navigation {
+    @include make-container();
+    .brand {
+        padding: 25px 0;
+        text-align: center;
+        font-size: 28px;
+        line-height: 30px;
+        color: white;
+    }
+    .inner-wrap {
+        padding: 20px;
+    }
+    @mixin navFont() {
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+    position: relative;
+    background: $primary-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        margin-left: 24px;
+    }
+    a {
+        @include navFont();
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        &:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        @include navFont();
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        /* Important for vertical align on mobile phones */
+        margin: 0;
+        /* Important for vertical align on mobile phones */
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        &:before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 14px 18px 14px;
+            border-color: transparent transparent $cream-color transparent;
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -webkit-filter: drop-shadow(0px -2px 1px #dee2e5);
+            filter: drop-shadow(0px -2px 1px #dee2e5)
+        }
+    }
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $cream-color;
+        border-radius: 6px;
+        padding: 15px 30px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        color: white;
+        a {
+            float: none;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: darkblue;
+            &:hover {
+                color: $primary-color;
+                border-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.module-navigation-menu {
+    @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+    .navbar .nav {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+    .navbar-inverse {
+        background-color: #003300;
+        .navbar-nav> {
+            .active>a:hover {
+                background-color: #002200;
+            }
+            li>a {
+                &:hover,
+                &:focus {
+                    background-color: #002200;
+                }
+            }
+            .active>a {
+                background-color: #003300;
+            }
+            .open>a {
+                background-color: #003300;
+                &:hover,
+                &:focus {
+                    background-color: #003300;
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        background-color: #006B00;
+        >li>a {
+            &:hover,
+            &:focus {
+                background-color: #002200;
+            }
+        }
+    }
+    .navbar-inverse {
+        background-image: none;
+    }
+    .dropdown-menu>li>a {
+        &:hover,
+        &:focus {
+            background-image: none;
+        }
+    }
+    .navbar-inverse {
+        border-color: #003300;
+        .navbar-brand {
+            color: #FFFFFF;
+            &:hover {
+                color: #FFCC00;
+            }
+        }
+        .navbar-nav> {
+            li>a {
+                color: #FFFFFF;
+                &:hover,
+                &:focus {
+                    color: #FFCC00;
+                }
+            }
+            .active>a {
+                color: #FFCC00;
+            }
+            .open>a {
+                color: #FFCC00;
+                &:hover,
+                &:focus {
+                    color: #FFCC00;
+                }
+            }
+            .active>a {
+                &:hover,
+                &:focus {
+                    color: #FFCC00;
+                }
+            }
+        }
+    }
+    .dropdown-menu>li>a {
+        color: #FFFFFF;
+        &:hover,
+        &:focus {
+            color: #FFCC00;
+        }
+    }
+    .navbar-inverse .navbar-nav>.dropdown>a {
+        .caret,
+        &:hover .caret {
+            border-top-color: #FFFFFF;
+        }
+        .caret,
+        &:hover .caret {
+            border-bottom-color: #FFFFFF;
+        }
+    }
+}

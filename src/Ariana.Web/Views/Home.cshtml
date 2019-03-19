@@ -3,6 +3,6 @@
 
 @inherits UmbracoViewPage<Ariana.Logic.Models.Home>
 
-<h1> Home Page</h1>
+@*@Html.Partial("_PrimaryNavigation", Model)*@
 
 @Html.NestedContent(Model.Modules, null, "~/Views/Partials/Modules/")
