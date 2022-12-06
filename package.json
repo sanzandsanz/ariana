@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "bgtm": "^1.1.0",
+    "bgtm": "^2.1.2",
     "bgtm-engine-images": "^0.0.5",
     "bgtm-engine-js": "^0.0.3",
     "bgtm-engine-scss": "^0.0.5",
@@ -12,7 +12,7 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "bgtm": "^1.1.0",
+    "bgtm": "^2.1.2",
     "bgtm-engine-images": "0.0.5",
     "bgtm-engine-js": "0.0.3",
     "bgtm-engine-scss": "0.0.5",
